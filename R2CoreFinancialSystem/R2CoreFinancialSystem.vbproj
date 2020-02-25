@@ -78,6 +78,30 @@
     <Compile Include="Accounting Documents\AccountingDocumentTypes\UCSanadType.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="AccountsCoding\AccountCoding\UCAccountCoding.Designer.vb">
+      <DependentUpon>UCAccountCoding.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccountsCoding\AccountCoding\UCAccountCoding.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AccountsCoding\AccountsCodingLevels\UCSearcherAccountsCodingLevels.Designer.vb">
+      <DependentUpon>UCSearcherAccountsCodingLevels.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccountsCoding\AccountsCodingLevels\UCSearcherAccountsCodingLevels.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AccountsCoding\BalanceSheetAccountTypes\UCSearcherBalanceSheetAccountTypes.Designer.vb">
+      <DependentUpon>UCSearcherBalanceSheetAccountTypes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccountsCoding\BalanceSheetAccountTypes\UCSearcherBalanceSheetAccountTypes.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AccountsCoding\CostBenefitAccountTypes\UCSearcherCostBenefitAccountTypes.Designer.vb">
+      <DependentUpon>UCSearcherCostBenefitAccountTypes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccountsCoding\CostBenefitAccountTypes\UCSearcherCostBenefitAccountTypes.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
