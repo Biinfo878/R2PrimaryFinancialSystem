@@ -1,6 +1,6 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class UCSearcherAccountsCodingLevels
-    Inherits R2CoreGUI.UCSearcherAdvance
+Partial Class UCLabelAccountCodeId
+    Inherits R2CoreGUI.UCLabel
 
 
     'UserControl overrides dispose to clean up the component list.
@@ -23,8 +23,18 @@ Partial Class UCSearcherAccountsCodingLevels
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container()
+        Me.SuspendLayout()
+        '
+        'UCLabelAccountCodeId
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.Name = "UCLabelAccountCodeId"
+        Me.Size = New System.Drawing.Size(65, 27)
+        Me.UCFont = New System.Drawing.Font("IRMehr", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(178, Byte))
+        Me.UCValue = "کدحساب"
+        Me.ResumeLayout(False)
+
     End Sub
 
 End Class

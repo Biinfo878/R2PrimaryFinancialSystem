@@ -49,9 +49,9 @@ Partial Class FrmcFirst
         '
         Me.PnlMain.BackColor = System.Drawing.Color.DarkGray
         Me.PnlMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PnlMain.Controls.Add(Me.LblApplicationDomainTitle1)
         Me.PnlMain.Controls.Add(Me.LblSystemTitle)
         Me.PnlMain.Controls.Add(Me.PicEnd)
-        Me.PnlMain.Controls.Add(Me.LblApplicationDomainTitle1)
         Me.PnlMain.Controls.Add(Me.LblApplicationDomainTitle0)
         Me.PnlMain.Controls.Add(Me.UcLabelMessage)
         Me.PnlMain.Dock = System.Windows.Forms.DockStyle.Fill
@@ -79,9 +79,9 @@ Partial Class FrmcFirst
         Me.LblApplicationDomainTitle1.BackColor = System.Drawing.Color.Transparent
         Me.LblApplicationDomainTitle1.Font = New System.Drawing.Font("B Homa", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(178,Byte))
         Me.LblApplicationDomainTitle1.ForeColor = System.Drawing.Color.Black
-        Me.LblApplicationDomainTitle1.Location = New System.Drawing.Point(11, 40)
+        Me.LblApplicationDomainTitle1.Location = New System.Drawing.Point(157, 40)
         Me.LblApplicationDomainTitle1.Name = "LblApplicationDomainTitle1"
-        Me.LblApplicationDomainTitle1.Size = New System.Drawing.Size(397, 23)
+        Me.LblApplicationDomainTitle1.Size = New System.Drawing.Size(251, 23)
         Me.LblApplicationDomainTitle1.TabIndex = 202
         Me.LblApplicationDomainTitle1.Text = " "
         Me.LblApplicationDomainTitle1.TextAlign = System.Drawing.ContentAlignment.MiddleRight

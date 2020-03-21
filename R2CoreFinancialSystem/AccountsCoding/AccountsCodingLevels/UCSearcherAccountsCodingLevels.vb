@@ -4,7 +4,7 @@ Imports System.Reflection
 
 Imports R2CoreGUI
 Imports R2Core.BaseStandardClass
-Imports R2CoreFinancialSystem.R2CoreFinancialSystem.AccountsCoding.AccountsCodingLevels
+Imports R2CoreFinancialSystem.AccountsCoding.AccountsCodingLevels
 
 
 

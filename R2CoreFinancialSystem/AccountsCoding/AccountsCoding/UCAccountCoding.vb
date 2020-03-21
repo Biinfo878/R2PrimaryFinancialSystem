@@ -1,12 +1,17 @@
 ﻿
+Imports System.Drawing
+Imports System.ComponentModel
+Imports System.Reflection
 
 Imports R2CoreGUI
+Imports R2CoreFinancialSystem.AccountsCoding.AccountsCoding
+
 
 Public Class UCAccountCoding
     Inherits UCGeneral
 
-    Public Event UCNSSCurrentChanged(NSSCurrent As R2CoreTransportationAndLoadNotificationStandardTransportCompanyStructure)
-    Protected Event UCViewNSSRequested(NSSCurrent As R2CoreTransportationAndLoadNotificationStandardTransportCompanyStructure)
+    Public Event UCNSSCurrentChanged(NSSCurrent As R2CoreFinancialSystemAccountCodingStructure)
+    Protected Event UCViewNSSRequested(NSSCurrent As R2CoreFinancialSystemAccountCodingStructure)
     Protected Event UCChangeColorToActiveRequested()
     Protected Event UCChangeColorToUnActiveRequested()
     Protected Event UCViewNSSNothingRequested()
@@ -18,13 +23,13 @@ Public Class UCAccountCoding
 
 #Region "General Properties"
 
-    Private _UCNSSCurrent As R2CoreTransportationAndLoadNotificationStandardTransportCompanyStructure = Nothing
+    Private _UCNSSCurrent As R2CoreFinancialSystemAccountCodingStructure = Nothing
     <Browsable(False)>
-    Public Property UCNSSCurrent() As R2CoreTransportationAndLoadNotificationStandardTransportCompanyStructure
+    Public Property UCNSSCurrent() As R2CoreFinancialSystemAccountCodingStructure
         Get
             Return _UCNSSCurrent
         End Get
-        Set(value As R2CoreTransportationAndLoadNotificationStandardTransportCompanyStructure)
+        Set(value As R2CoreFinancialSystemAccountCodingStructure)
             _UCNSSCurrent = value
             If value Is Nothing Then
                 RaiseEvent UCViewNSSNothingRequested()
@@ -37,7 +42,6 @@ Public Class UCAccountCoding
 #End Region
 
 #Region "Subroutins And Functions"
-
     Public Sub New()
 
         ' This call is required by the designer.
@@ -55,7 +59,7 @@ Public Class UCAccountCoding
         End Try
     End Sub
 
-    Public Sub UCViewNSS(YourNSS As R2CoreTransportationAndLoadNotificationStandardTransportCompanyStructure)
+    Public Sub UCViewNSS(YourNSS As R2CoreFinancialSystemAccountCodingStructure)
         Try
             UCNSSCurrent = YourNSS
             RaiseEvent UCViewNSSRequested(UCNSSCurrent)
@@ -64,9 +68,9 @@ Public Class UCAccountCoding
         End Try
     End Sub
 
-    Public Sub UCViewNSS(YourTransportCompanyId As Int64)
+    Public Sub UCViewNSS(YourAccountId As Int64)
         Try
-            UCNSSCurrent = R2CoreTransportationAndLoadNotificationMClassTransportCompaniesManagement.GetNSSTransportCompany(YourTransportCompanyId)
+            UCNSSCurrent = R2CoreFinancialSystemMClassAccountsCodingManagement.GetNSSActiveAccount(YourAccountId)
             RaiseEvent UCViewNSSRequested(UCNSSCurrent)
         Catch ex As Exception
             Throw New Exception(MethodBase.GetCurrentMethod().ReflectedType.FullName + "." + MethodBase.GetCurrentMethod().Name + vbCrLf + ex.Message)
@@ -79,6 +83,10 @@ Public Class UCAccountCoding
 
     Public Sub UCShowActive()
         RaiseEvent UCChangeColorToActiveRequested()
+    End Sub
+
+    Private Sub UCAccountCoding_UCGotFocusedEvent() Handles Me.UCGotFocusedEvent
+
     End Sub
 
 

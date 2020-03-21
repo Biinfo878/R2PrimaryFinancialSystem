@@ -48,10 +48,12 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="R2Core">
+    <Reference Include="R2Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\ATIS System\ATIS Desktop\R2PrimarySolution\R2Core\bin\Debug\R2Core.dll</HintPath>
     </Reference>
-    <Reference Include="R2CoreGUI">
+    <Reference Include="R2CoreGUI, Version=1.0.7378.37217, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\ATIS System\ATIS Desktop\R2PrimarySolution\R2CoreGUI\bin\Debug\R2CoreGUI.dll</HintPath>
     </Reference>
     <Reference Include="System" />
@@ -123,6 +125,12 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\R2CoreFinancialSystem\R2CoreFinancialSystem.vbproj">
+      <Project>{077b0b1a-6705-487a-a648-f442074de326}</Project>
+      <Name>R2CoreFinancialSystem</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

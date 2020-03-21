@@ -44,14 +44,25 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="R2Core">
+    <Reference Include="AlphaGradientPanel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ATIS System\ATIS Desktop\R2PrimarySolution\R2CoreGUI\bin\Debug\AlphaGradientPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="CButtonLib, Version=3.0.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ATIS System\ATIS Desktop\R2PrimarySolution\R2CoreGUI\bin\Debug\CButtonLib.dll</HintPath>
+    </Reference>
+    <Reference Include="R2Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\ATIS System\ATIS Desktop\R2PrimarySolution\R2Core\bin\Debug\R2Core.dll</HintPath>
     </Reference>
-    <Reference Include="R2CoreGUI">
+    <Reference Include="R2CoreGUI, Version=1.0.7378.37461, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\ATIS System\ATIS Desktop\R2PrimarySolution\R2CoreGUI\bin\Debug\R2CoreGUI.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
@@ -78,10 +89,24 @@
     <Compile Include="Accounting Documents\AccountingDocumentTypes\UCSanadType.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="AccountsCoding\AccountCoding\UCAccountCoding.Designer.vb">
+    <Compile Include="AccountsCoding\AccountsCodingLevels\UCLabelAccountsCodingLevels.Designer.vb">
+      <DependentUpon>UCLabelAccountsCodingLevels.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccountsCoding\AccountsCodingLevels\UCLabelAccountsCodingLevels.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AccountsCoding\AccountsCoding\FrmcManipulationAccountsCoding.Designer.vb">
+      <DependentUpon>FrmcManipulationAccountsCoding.vb</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="AccountsCoding\AccountsCoding\FrmcManipulationAccountsCoding.vb">
+      <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="AccountsCoding\AccountsCoding\UCAccountCoding.Designer.vb">
       <DependentUpon>UCAccountCoding.vb</DependentUpon>
     </Compile>
-    <Compile Include="AccountsCoding\AccountCoding\UCAccountCoding.vb">
+    <Compile Include="AccountsCoding\AccountsCoding\UCAccountCoding.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="AccountsCoding\AccountsCodingLevels\UCSearcherAccountsCodingLevels.Designer.vb">
@@ -90,10 +115,58 @@
     <Compile Include="AccountsCoding\AccountsCodingLevels\UCSearcherAccountsCodingLevels.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="AccountsCoding\AccountsCoding\UCLabelAccountCodeId.Designer.vb">
+      <DependentUpon>UCLabelAccountCodeId.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccountsCoding\AccountsCoding\UCLabelAccountCodeId.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AccountsCoding\AccountsCoding\UCLabelAccountCodeTitle.Designer.vb">
+      <DependentUpon>UCLabelAccountCodeTitle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccountsCoding\AccountsCoding\UCLabelAccountCodeTitle.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AccountsCoding\AccountsCoding\UCManipulationAccountCoding.Designer.vb">
+      <DependentUpon>UCManipulationAccountCoding.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccountsCoding\AccountsCoding\UCManipulationAccountCoding.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AccountsCoding\AccountsCoding\UCUCAccountCodingCollection.Designer.vb">
+      <DependentUpon>UCUCAccountCodingCollection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccountsCoding\AccountsCoding\UCUCAccountCodingCollection.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AccountsCoding\AccountsCoding\UCUCAccountCodingCollectionAdvanced.Designer.vb">
+      <DependentUpon>UCUCAccountCodingCollectionAdvanced.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccountsCoding\AccountsCoding\UCUCAccountCodingCollectionAdvanced.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AccountsCoding\AccountsCoding\UCViewerNSSAccountCoding.Designer.vb">
+      <DependentUpon>UCViewerNSSAccountCoding.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccountsCoding\AccountsCoding\UCViewerNSSAccountCoding.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AccountsCoding\BalanceSheetAccountTypes\UCLableBalanceSheetAccountTypes.Designer.vb">
+      <DependentUpon>UCLableBalanceSheetAccountTypes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccountsCoding\BalanceSheetAccountTypes\UCLableBalanceSheetAccountTypes.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="AccountsCoding\BalanceSheetAccountTypes\UCSearcherBalanceSheetAccountTypes.Designer.vb">
       <DependentUpon>UCSearcherBalanceSheetAccountTypes.vb</DependentUpon>
     </Compile>
     <Compile Include="AccountsCoding\BalanceSheetAccountTypes\UCSearcherBalanceSheetAccountTypes.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AccountsCoding\CostBenefitAccountTypes\UCLabelCostBenefitAccountTypes.Designer.vb">
+      <DependentUpon>UCLabelCostBenefitAccountTypes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccountsCoding\CostBenefitAccountTypes\UCLabelCostBenefitAccountTypes.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="AccountsCoding\CostBenefitAccountTypes\UCSearcherCostBenefitAccountTypes.Designer.vb">
@@ -122,6 +195,37 @@
   <ItemGroup>
     <EmbeddedResource Include="Accounting Documents\AccountingDocumentTypes\UCSanadType.resx">
       <DependentUpon>UCSanadType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountsCoding\AccountsCodingLevels\UCLabelAccountsCodingLevels.resx">
+      <DependentUpon>UCLabelAccountsCodingLevels.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountsCoding\AccountsCoding\FrmcManipulationAccountsCoding.resx">
+      <DependentUpon>FrmcManipulationAccountsCoding.vb</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountsCoding\AccountsCoding\UCLabelAccountCodeId.resx">
+      <DependentUpon>UCLabelAccountCodeId.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountsCoding\AccountsCoding\UCLabelAccountCodeTitle.resx">
+      <DependentUpon>UCLabelAccountCodeTitle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountsCoding\AccountsCoding\UCManipulationAccountCoding.resx">
+      <DependentUpon>UCManipulationAccountCoding.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountsCoding\AccountsCoding\UCUCAccountCodingCollection.resx">
+      <DependentUpon>UCUCAccountCodingCollection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountsCoding\AccountsCoding\UCUCAccountCodingCollectionAdvanced.resx">
+      <DependentUpon>UCUCAccountCodingCollectionAdvanced.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountsCoding\AccountsCoding\UCViewerNSSAccountCoding.resx">
+      <DependentUpon>UCViewerNSSAccountCoding.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountsCoding\BalanceSheetAccountTypes\UCLableBalanceSheetAccountTypes.resx">
+      <DependentUpon>UCLableBalanceSheetAccountTypes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountsCoding\CostBenefitAccountTypes\UCLabelCostBenefitAccountTypes.resx">
+      <DependentUpon>UCLabelCostBenefitAccountTypes.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

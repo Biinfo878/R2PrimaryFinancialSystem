@@ -4,7 +4,7 @@ Imports System.Reflection
 Imports System.Windows.Forms
 
 
-Imports R2CoreFinancialSystem.R2CoreFinancialSystem.AccountingDocumentTypes
+Imports R2CoreFinancialSystem.AccountingDocumentTypes
 
 
 
