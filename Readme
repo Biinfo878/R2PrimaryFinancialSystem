@@ -1,0 +1,10 @@
+Active IIS Windows 10 or Seven 
+    WindowsFutures Internet Information Services
+    Install ASPNet4 : C:\Windows\Microsoft.NET\Framework64\v4.0.30319>dism /online /enable-feature /all /featurename:IIS-ASPNET45
+
+Make MIMEType .asmx text/plain
+Make WebSites for WebService 
+    R2PrimaryWebService Port:2011 ApplicationPool:Active 32Bit -  Indentity admin
+    R2PrimaryFileSharingWebService Port:2013 ApplicationPool:Active 32Bit -  Indentity admin
+
+ 
